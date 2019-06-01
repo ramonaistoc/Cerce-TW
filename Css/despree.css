@@ -1,0 +1,56 @@
+	*{
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+	}
+
+	.spatiu
+	{
+		line-height: 120%;
+		margin-top: 0.2rem;
+		margin-bottom: 0.1rem;
+		margin-right: 2%;
+		margin-left: 2%;
+		color: black;
+		text-indent:1.5rem;
+	}
+
+	.spatiu2 	/*vreau ca primul paragraf sa inceapa odata cu poza*/
+	{
+		line-height: 120%;
+		margin-top: 0.2rem;
+		margin-bottom: 0.1rem;
+		margin-right: 2%;
+		margin-left: 2%;
+		color: black;
+		text-indent:1.5rem;
+	}
+	
+	.imag
+	{
+		border-radius: 0.4rem;
+		padding:0;
+		width: 30%;
+		height:10%;
+		float: left;
+		margin-right:2%;
+		margin-left:2%;
+	}
+
+	@media screen and (max-width:600px)
+	{
+		.imag
+		{
+			width: 60%;
+			height:30%;
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+

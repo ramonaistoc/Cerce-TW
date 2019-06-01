@@ -1,0 +1,178 @@
+	*{
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+	}
+	html
+	{
+		font-size:20px;
+	}
+	
+	small
+	{
+		float:right;
+	}
+	
+	.titlu
+	{
+		color: black;
+		text-align: center;
+		font-size:1rem;
+		font-family: "lucida calligraphy";
+		padding-top:6rem;
+		margin-bottom:2rem;
+		font-weight:bold;
+	}
+	
+
+	footer
+	{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: grey;
+		color: black;
+		text-align: center;	
+	}
+	
+	#meniu 
+	{
+		font-size: 1rem;
+		font-family: "lucida calligraphy";
+		list-style-type:none;
+		margin: 0;
+		padding: 0;	
+		top: 0;
+	}
+	
+	#meniu ul	/*pt bara de menu*/
+	{
+		width:100%;
+		top: 0; /*ca sa nu  aiba spațiu deasupra*/
+		margin-top:0;
+	}
+	
+	#meniu li
+	{
+		position:relative; /*daca pun absolute dispare*/
+		
+	}
+	
+	#meniu
+	{
+		line-height:100%; /*spatierea, asta e distața gen sapțiul de deasupra si dedesubtul numelor pagininilor*/
+	}
+	/* atributele nume butoane*/
+	#meniu a
+	{
+		display:block; /*la block apare spațierea aia intre paragrafe si unde aplici display ul*/
+		text-decoration:none;
+		color: white;
+	}
+		
+	#meniu ul li	/*pt bara zona cu butoane*/
+	{
+		float:left; /*numele paginilor sa apara de la stg la drpt*/
+		background: black;
+		width: 25%;
+		height: 5rem;
+		line-height: 5rem;
+		list-style-type: none;
+		margin-top:0;
+	}
+	#meniu ul li {padding-left:2%;}
+	
+	#meniu ul /*bara zona fara butoane*/
+	{
+		background:black;
+	}
+	
+	#meniu ul li a		/* tip nume pagini*/
+	{
+		font-weight:bold;
+		/*padding:1rem 2rem;	/*primul e pentru top si bottom, al doilea left si right*/
+		display:inline-block;
+		width: 100%;
+	}
+
+	#meniu ul li ul li  /* atribute submeniu, latimea & stuff la dropdown*/
+	{  
+		width:100%;
+		border: none;
+		background: #383838 ;
+		font-family: "lucida calligraphy";
+		padding-left:15%;
+		padding-top:3%; /*asta e spatiul de deasupra fiecarui text*/
+		padding-bottom:3%;
+		padding-right:15%;	
+	}
+
+	#meniu ul li ul li a /*tot atribute submenu*/
+	{
+		font: 0.9rem lucida calligraphy;
+		font-style: italic;
+		padding-top:3%; /*padding ul asta imi contine si hoverul*/
+		padding-bottom:3%;	
+	}	
+
+	#meniu ul li ul, #meniu:hover ul li ul
+	{
+		display: none; /*daca dau block apare fara click*/
+		list-style-type:none;
+		width: 65%; /*latime bara submenu*/
+		padding: 0;
+	}
+    #meniu ul li ul li:hover
+    {
+        background-color:#111;
+    }
+
+	#meniu li a:hover  /*hover submenu*/
+	{
+		background: #111;
+		height:100%;
+		width: 6.5rem;
+        padding: 0;
+	}
+
+    #meniu ul li ul li a:hover{ 
+        width:90%;
+        height: 50%;
+    }
+	
+	#meniu:hover ul, #meniu:hover ul li:hover ul /*ca sa apara submneu*/
+	{
+	display: block;
+	}
+	
+	#meniu:hover ul li:hover ul /*ca sa apara sub numele paginii si sub submeniul*/
+	{
+	position: absolute;
+	top:100%;
+	}
+	
+	#meniu ul li ul li:hover{
+		margin:0;
+		width: 100%;
+	}
+		
+	h2	
+	{
+		font-family:lucida calligraphy;
+		text-align:center;
+		margin-top: 4%;
+		margin-bottom: 2%;
+		margin-right: 2%;
+		margin-left: 2%;
+		color:black;
+	}	
+	
+	@media screen and (max-width:800px) 
+	{
+		#meniu ul li { width: 50%;}
+		#meniu ul li ul, #meniu:hover ul li ul
+	{
+		width: 50%; /*latime bara submenu*/
+	}
+	}

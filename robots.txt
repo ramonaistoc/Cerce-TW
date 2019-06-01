@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /doc/
+http://cercetasi.byethost15.com/sitemap.xml

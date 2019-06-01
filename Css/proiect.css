@@ -1,0 +1,43 @@
+	
+	*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}	
+	
+		
+	.parsubcls
+	{
+		text-decoration:none;
+		line-height: 120%;
+		margin-top: 0.2rem;
+		margin-bottom: 17%;
+		margin-right: 2%;
+		margin-left: 2%;
+		color: black;
+		text-indent:1.5rem;
+
+	}	
+		
+	#vaz
+	{
+		width:100%;
+		float:left;
+		margin-bottom:4%;
+	}
+		
+	.imagine
+	{
+		border-radius: 0.4rem;
+		padding:0;
+		width: 20%;
+		height:9%;
+		float: left;
+		margin-right:2%;
+		margin-left:2%;
+		margin-bottom:2%;
+		margin-top:2%;
+	}
+
+
+
